@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def welcome(request):
-    return HttpResponse("Hello Lemon")
+    return HttpResponse("Hello MyBlog")
