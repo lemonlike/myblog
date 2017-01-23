@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>博客主页</title>
 </head>
 <body>
-<h1>{{ article.title }}</h1>
-<h3>{{ article.content }}</h3>
+<h1>
+<a href="">新文章</a>
+</h1>
+{% for article in articles %}
+    <a href="">{{ article.title }}</a>
+    <br/>
+{% endfor %}
 </body>
 </html>

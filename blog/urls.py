@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     url(r'^welcome/', views.welcome),
-    url(r'^index/', views.index)
+    url(r'^index/', views.index),
+    url(r'^article/(?P<article_id>[0-9]+)$', views.article_page),
 ]
